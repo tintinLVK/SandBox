@@ -1,0 +1,68 @@
+body{
+
+}
+
+h1{
+    text-align: center;
+}
+
+img {
+   width: 350px;
+}
+
+.div1 {
+
+}
+
+.div2 {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+p {
+    display: inline-block;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.vinyle {
+animation: turn 3.5s infinite linear;   
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg) scale(1);
+        }
+    50% {
+            transform: rotate(180deg) scale(1.2);
+            }
+    100% {
+        transform: rotate(360deg) scale(1);
+
+    }
+}
+
+.gazo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.disque {
+    position: relative;
+    display: inline-block;
+    animation: turn 3.5s infinite linear; 
+}
