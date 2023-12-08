@@ -1,17 +1,11 @@
-body{
-
-}
-
-h1{
-    text-align: center;
+body {
 }
 
 img {
-   width: 350px;
+    width: 350px;
 }
 
 .div1 {
-
 }
 
 .div2 {
@@ -21,48 +15,54 @@ img {
 }
 
 p {
+    background-color: red;
     display: inline-block;
 }
 
-ul {
+ul{
     display: flex;
     gap: 10px;
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.vinyle {
-animation: turn 3.5s infinite linear;   
+.vinyle{
 }
 
 @keyframes turn {
     0% {
-        transform: rotate(0deg) scale(1);
-        }
+       transform :rotate(0deg) scale(1); 
+    }
+    /* 25% {
+        transform :rotate(90deg) scale(2); 
+     } */
     50% {
-            transform: rotate(180deg) scale(1.2);
-            }
+        transform :rotate(180deg); 
+     }
     100% {
-        transform: rotate(360deg) scale(1);
-
+        transform :rotate(360deg); 
     }
 }
 
 .gazo {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
-    position: absolute;
     border-radius: 100%;
-    top: 50%;
+    position: absolute;
+    top : 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
 }
 
-.disque {
+.disque{
     position: relative;
     display: inline-block;
-    animation: turn 3.5s infinite linear; 
+    animation: turn 4s infinite linear;
+}
+
+.pause{
+    animation-play-state: paused;
 }
